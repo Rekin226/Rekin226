@@ -3,7 +3,7 @@
 Hydrogeologist and scientific software engineer building open tools for water research.
 
 Postdoctoral Researcher, National Central University (NCU)
-Adjunct Lecturer, Feng Chia University (FCU)
+Adjunct Instructor, Feng Chia University (FCU)
 Founder, POUK_YAM
 
 [![Follow](https://img.shields.io/github/followers/Rekin226?label=Follow&style=social)](https://github.com/Rekin226)
