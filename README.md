@@ -6,8 +6,8 @@ Postdoctoral Researcher, National Central University (NCU)
 Adjunct Instructor, Feng Chia University (FCU)
 Founder, POUK_YAM
 
-[![Follow](https://img.shields.io/github/followers/Rekin226?label=Follow&style=social)](https://github.com/Rekin226)
-[![AquaScope stars](https://img.shields.io/github/stars/Rekin226/aquascope?label=AquaScope&style=social)](https://github.com/Rekin226/aquascope)
+[![Follow](https://img.shields.io/badge/Follow-Rekin226-blue?logo=github&style=flat)](https://github.com/Rekin226)
+[![AquaScope](https://img.shields.io/badge/AquaScope-⭐_star-blue?logo=github&style=flat)](https://github.com/Rekin226/aquascope)
 
 ---
 
