@@ -95,10 +95,8 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Rekin226&show_icons=true&theme=react&hide_border=true&include_all_commits=true&count_private=true" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rekin226&layout=compact&theme=react&hide_border=true&langs_count=8" alt="top langs" />
-
-<img src="https://streak-stats.demolab.com?user=Rekin226&theme=react&hide_border=true" alt="streak" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rekin226&layout=compact&theme=react&hide_border=true&langs_count=8" alt="top langs" />
+<img height="170" src="https://streak-stats.demolab.com?user=Rekin226&theme=react&hide_border=true" alt="streak" />
 
 <img src="https://github-profile-trophy.vercel.app/?username=Rekin226&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" alt="trophies" />
 
