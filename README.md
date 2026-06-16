@@ -28,7 +28,8 @@ I build open-source tools that turn messy global water data into reproducible sc
 <td width="50%" valign="top">
 
 ### [AquaScope](https://github.com/Rekin226/aquascope)
-[![stars](https://img.shields.io/github/stars/Rekin226/aquascope?style=social)](https://github.com/Rekin226/aquascope)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/aquascope)
+[![Open Source](https://img.shields.io/badge/Open_Source-2E9BF5?logo=github&logoColor=white)](https://github.com/Rekin226/aquascope)
 
 Open-source Python toolkit that unifies global water data under one API.
 
@@ -43,7 +44,8 @@ Open-source Python toolkit that unifies global water data under one API.
 <td width="50%" valign="top">
 
 ### [HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)
-[![stars](https://img.shields.io/github/stars/Rekin226/HydroPhysicsAI?style=social)](https://github.com/Rekin226/HydroPhysicsAI)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
+[![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
 GPU physics-informed neural operators for groundwater, one model across 61 wells.
 
