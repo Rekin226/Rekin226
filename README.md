@@ -3,7 +3,7 @@
 # Abdoul Rachid Ouédraogo (韋正)
 
 <a href="https://github.com/Rekin226">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Hydrogeologist+%26+Scientific+Software+Engineer;Physics-informed+%26+gray-box+machine+learning;Agentic+AI+for+scientific+research;Open+tools+for+water+research" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Scientific+ML+%26+Agentic+AI+for+Science;Physics-informed+neural+operators+on+NVIDIA+PhysicsNeMo;Agentic+AI+for+scientific+research;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
 </a>
 
 **Postdoctoral Researcher @ NCU** · **Adjunct Instructor @ FCU** · **Founder of [POUK_YAM](https://github.com/Pouk-Yam)**
@@ -17,30 +17,14 @@
 
 ---
 
-I build open-source tools that turn messy global water data into reproducible science, and I research how physics-informed and agentic AI can model groundwater systems honestly. I work across hydrogeology, scientific computing, and machine learning, and I teach numerical methods at Feng Chia University.
+I build AI for science: physics-informed machine learning, agentic AI, and the tested software that ships it. My depth is in hydrogeology and groundwater modeling, which I use as a proving ground for honest, reproducible scientific ML. I also teach numerical methods at Feng Chia University.
 
 ---
 
-## 🌊 Featured projects
+## 🚀 Featured projects
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### [AquaScope](https://github.com/Rekin226/aquascope)
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/aquascope)
-[![Open Source](https://img.shields.io/badge/Open_Source-2E9BF5?logo=github&logoColor=white)](https://github.com/Rekin226/aquascope)
-
-Open-source Python toolkit that unifies global water data under one API.
-
-- **12 collectors**: USGS, FAO, GEMStat, EU WFD, and more
-- **Bulletin 17C** flood-frequency analysis
-- **FAO-56** evapotranspiration
-- AI methodology **recommender**
-
-[![Support on Ko-fi](https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope)
-
-</td>
 <td width="50%" valign="top">
 
 ### [HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)
@@ -57,6 +41,52 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 [![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
 </td>
+<td width="50%" valign="top">
+
+### [AquaScope](https://github.com/Rekin226/aquascope)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/aquascope)
+[![PyPI](https://img.shields.io/badge/PyPI-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+
+Open-source Python toolkit that unifies global water data under one API.
+
+- **15 collectors**: USGS, FAO, GEMStat, EU WFD, and more
+- **26 methodologies** + an agentic AI engine (7 pipelines)
+- Bulletin 17C flood frequency, FAO-56 ET, CAMELS-validated
+- **500+ tests**, Python 3.10+
+
+[![Support on Ko-fi](https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Agronaut](https://github.com/Rekin226/Agronaut)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/Agronaut)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)](https://github.com/Rekin226/Agronaut)
+
+Tool-calling aquaponics agent over a deterministic, tested, cited engineering core.
+
+- LLM collects and routes; a verifiable engine does the math
+- **Cross-session memory** + a deep troubleshooting knowledge base
+- Calibrated on real-pond data; design & optimize need **no LLM**
+- Runs as Streamlit or a Telegram agent; Ollama · NVIDIA · HF
+
+</td>
+<td width="50%" valign="top">
+
+### [paper-agent](https://github.com/Rekin226/paper-agent)
+[![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.5.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent)
+[![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
+
+Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator.
+
+- Five modes: draft, review, revise, proofread, audit
+- **Semantic Scholar MCP** citations (no API key), anti-fabrication guardrails
+- Hydrology (HJ, JHRS) + IEEE + a generic quantitative-science profile
+- Clean `.docx` round-trip; bundled try-it demos
+
+</td>
 </tr>
 </table>
 
@@ -64,7 +94,7 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 
 ## 🔬 Research interests
 
-`Groundwater modeling & hydrogeology` · `Physics-informed & gray-box ML` · `Sustainable water resources` · `Agentic AI for science` · `Numerical methods & scientific computing`
+`Physics-informed & scientific ML` · `Agentic AI for science` · `Groundwater modeling & hydrogeology` · `Numerical methods & scientific computing` · `Sustainable water resources`
 
 ## 🛠️ Tech stack
 
@@ -76,9 +106,10 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 
 ## 📌 Recent work
 
-- 📄 **Hydrogeology Journal** accepted manuscript on gray-box groundwater modeling for the Zhuoshui Alluvial Fan, Taiwan
 - 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)**: GPU physics-informed neural operators benchmarked against per-well gray-box ODEs, with a live demo and an honest, reproducible benchmark harness
-- 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: Claude Code skill suite for hydrology manuscript workflows (Draft, Review, Revise, Proofread, Audit)
+- 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: packaged as a **Claude Code plugin (v1.5.0)** — draft/review/revise/proofread/audit manuscripts with Semantic Scholar MCP citation integrity, now broadened from hydrology to IEEE and a generic quantitative-science profile
+- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: tool-calling aquaponics agent over a deterministic, cited engineering core, with cross-session memory and a troubleshooting knowledge base
+- 📄 **Hydrogeology Journal** accepted manuscript on gray-box groundwater modeling for the Zhuoshui Alluvial Fan, Taiwan
 - 📊 **[aquascope-demos](https://github.com/Rekin226/aquascope-demos)**: real-world reproducible demo cases on public hydrology datasets
 - 🎓 **Numerical Analysis with Python**, graduate course taught at Feng Chia University
 - 💼 **POUK_YAM**, consulting and software at the intersection of scientific computing and agentic AI
@@ -113,6 +144,6 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 [![POUK_YAM](https://img.shields.io/badge/POUK__YAM-181717?logo=github&logoColor=white)](https://github.com/Pouk-Yam)
 [![AquaScope](https://img.shields.io/badge/⭐_AquaScope-2E9BF5?logo=github&logoColor=white)](https://github.com/Rekin226/aquascope)
 
-<sub>Building open tools for water research · Taichung, Taiwan</sub>
+<sub>Building AI for science · Taichung, Taiwan</sub>
 
 </div>
