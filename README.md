@@ -34,9 +34,9 @@ I build AI for science: physics-informed machine learning, agentic AI, and the t
 GPU physics-informed neural operators for groundwater, one model across 61 wells.
 
 - One attribute-conditioned operator vs **61** hand-calibrated ODEs
-- **14×** GPU training speedup (mixed precision, CUDA)
-- 7-day forecast **KGE 0.965**, 30-day **0.899**
-- NVIDIA **PhysicsNeMo** port, identical skill
+- Generalizes to **unseen wells**: leave-one-well-out **KGE 0.565** (climatology 0.446, in-sample 0.591)
+- Forecast LSTM beats persistence at **7 & 30 days**, calibrated intervals
+- **14×** GPU speedup (CUDA, bf16) · NVIDIA **PhysicsNeMo** port
 
 [![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
