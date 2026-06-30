@@ -6,11 +6,12 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Scientific+ML+%26+Agentic+AI+for+Science;Physics-informed+neural+operators+on+NVIDIA+PhysicsNeMo;Agentic+AI+for+scientific+research;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
 </a>
 
-**Postdoctoral Researcher @ NCU** · **Adjunct Instructor @ FCU** · **Founder of [POUK_YAM](https://github.com/Pouk-Yam)**
+**Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK_YAM](https://github.com/Pouk-Yam)**
 
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--4616--4153-A6CE39?logo=orcid&logoColor=white&style=for-the-badge)](https://orcid.org/0000-0002-4616-4153)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7)
+[![Website](https://img.shields.io/badge/rachidouedraogo.com-2E9BF5?logo=googlechrome&logoColor=white&style=for-the-badge)](https://rachidouedraogo.com)
 [![Location](https://img.shields.io/badge/Taichung,_Taiwan-EF4444?logo=googlemaps&logoColor=white&style=for-the-badge)](https://www.google.com/maps/place/Taichung)
 
 </div>
@@ -110,17 +111,18 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 - 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: packaged as a **Claude Code plugin (v1.5.0)** — draft/review/revise/proofread/audit manuscripts with Semantic Scholar MCP citation integrity, now broadened from hydrology to IEEE and a generic quantitative-science profile
 - 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: tool-calling aquaponics agent over a deterministic, cited engineering core, with cross-session memory and a troubleshooting knowledge base
 - 📄 **Hydrogeology Journal** accepted manuscript on gray-box groundwater modeling for the Zhuoshui Alluvial Fan, Taiwan
+- 📚 **Publications & patent**: 4 peer-reviewed papers (3 SCIE-indexed, incl. *Hydrogeology Journal* 2026) · granted Taiwan patent **M661364**
 - 📊 **[aquascope-demos](https://github.com/Rekin226/aquascope-demos)**: real-world reproducible demo cases on public hydrology datasets
 - 🎓 **Numerical Analysis with Python**, graduate course taught at Feng Chia University
 - 💼 **POUK_YAM**, consulting and software at the intersection of scientific computing and agentic AI
 
 ## 🎓 Background
 
-- **PhD**, Hydrogeology and Groundwater Modeling, Feng Chia University, Taiwan
-- **MSc**, Hydrogeology, Feng Chia University, Taiwan
+- **Ph.D.**, Infrastructure Planning & Engineering (groundwater modeling & hydrogeology), Feng Chia University, Taiwan · 2023
+- **M.S.**, Water Resources Engineering & Conservation, Feng Chia University, Taiwan · 2019
 - **Undergraduate**, 2iE (Institut International d'Ingénierie de l'Eau et de l'Environnement), Ouagadougou, Burkina Faso
 
-🌐 Multilingual: English, French, Mandarin (intermediate)
+🌐 Multilingual: French (native) · English (advanced) · Mandarin (working proficiency)
 
 ---
 
