@@ -3,7 +3,7 @@
 # Abdoul Rachid Ouédraogo (韋正)
 
 <a href="https://github.com/Rekin226">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Data+Scientist+%26+ML+Researcher%2C+Ph.D.;Physics-informed+ML+%26+agentic+AI+for+science;From+large+multi-source+data+to+validated+predictive+models;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Data+Scientist+%26+ML+Researcher%2C+Ph.D.;Physics-informed+ML+%26+agentic+AI+for+science;Research-to-production+ML+engineer;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
 </a>
 
 **Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK_YAM](https://github.com/Pouk-Yam)**
