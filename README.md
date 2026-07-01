@@ -8,7 +8,6 @@
 
 **Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://www.poukyam.com)**
 
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--4616--4153-A6CE39?logo=orcid&logoColor=white&style=for-the-badge)](https://orcid.org/0000-0002-4616-4153)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7)
 [![Website](https://img.shields.io/badge/rachidouedraogo.com-2E9BF5?logo=googlechrome&logoColor=white&style=for-the-badge)](https://rachidouedraogo.com)
