@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Data+Scientist+%26+ML+Researcher%2C+Ph.D.;Physics-informed+ML+%26+agentic+AI+for+science;Research-to-production+ML+engineer;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
 </a>
 
-**Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://poukyam.com)**
+**Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://www.poukyam.com)**
 
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--4616--4153-A6CE39?logo=orcid&logoColor=white&style=for-the-badge)](https://orcid.org/0000-0002-4616-4153)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
@@ -143,7 +143,7 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 
 <div align="center">
 
-[![POUK_YAM](https://img.shields.io/badge/POUK_YAM-2E9BF5?logo=googlechrome&logoColor=white)](https://poukyam.com)
+[![POUK_YAM](https://img.shields.io/badge/POUK_YAM-2E9BF5?logo=googlechrome&logoColor=white)](https://www.poukyam.com)
 [![AquaScope](https://img.shields.io/badge/⭐_AquaScope-2E9BF5?logo=github&logoColor=white)](https://github.com/Rekin226/aquascope)
 
 <sub>Building AI for science · Taichung, Taiwan</sub>
