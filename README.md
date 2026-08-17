@@ -49,11 +49,12 @@ GPU physics-informed neural operators for groundwater, one model across 61 wells
 
 Open-source Python toolkit that unifies global water data under one API.
 
-- **15 collectors**: USGS, FAO, GEMStat, EU WFD, and more
-- **26 methodologies** + an agentic AI engine (7 pipelines)
-- Bulletin 17C flood frequency, FAO-56 ET, CAMELS-validated
-- **500+ tests**, Python 3.10+
+- **29 collectors** behind one schema: USGS, UK EA, Hub'Eau, GRDC, BOM, FAO, GEMStat, EU WFD
+- **26 methodologies** scored and auto-executed by an AI engine
+- **MCP server** + `aquascope ask` — Claude or Cursor gets stations, series, and cited flood frequency
+- Bulletin 17C · FAO-56 · CAMELS-validated · **1,000+ tests** · **15 outside contributors**
 
+[![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
 [![Support on Ko-fi](https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope)
 
 </td>
@@ -67,10 +68,10 @@ Open-source Python toolkit that unifies global water data under one API.
 
 Tool-calling aquaponics agent over a deterministic, tested, cited engineering core.
 
-- LLM collects and routes; a verifiable engine does the math
-- **Cross-session memory** + a deep troubleshooting knowledge base
-- Calibrated on real-pond data; design & optimize need **no LLM**
-- Runs as Streamlit or a Telegram agent; Ollama · NVIDIA · HF
+- LLM collects and routes; a verifiable trust zone does the math
+- **Photos and voice notes** on Telegram, WhatsApp, and the web
+- Vision only *observes*: a guard strips fabricated readings, and a cited table returns a ranked **differential**, never a verdict
+- **541 tests** · advice-safety golden set enforced in CI · runs on self-hosted open weights
 
 </td>
 <td width="50%" valign="top">
@@ -106,12 +107,12 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 
 ## 📌 Recent work
 
+- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.10.0**: **29 data collectors** under one schema, an **MCP server** that hands Claude and Cursor real gauge data, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map, with flood frequency computed **in the browser** on Pyodide, no server. The catalog behind it is an open GeoParquet dataset, [`Rekin226/aquascope-gauges`](https://huggingface.co/datasets/Rekin226/aquascope-gauges), harvested weekly. JOSS paper in submission
+- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: the aquaponics agent gained **field senses** — photos and voice notes on Telegram, WhatsApp and the web. A vision model only *observes*; a deterministic guard strips any fabricated reading or prescription out of its description, and a cited triage table returns a ranked **differential** with the checks that discriminate, because a photograph cannot separate iron deficiency from pH lockout. **541 tests**, an advice-safety golden set that fails the build on a regression, and a [Digital Public Good](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
 - 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)**: GPU physics-informed neural operators benchmarked against per-well gray-box ODEs, with a live demo and an honest, reproducible benchmark harness
 - 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: packaged as a **Claude Code plugin (v1.5.0)** — draft/review/revise/proofread/audit manuscripts with Semantic Scholar MCP citation integrity, now broadened from hydrology to IEEE and a generic quantitative-science profile
-- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: tool-calling aquaponics agent over a deterministic, cited engineering core, with cross-session memory and a troubleshooting knowledge base
 - 📄 **Hydrogeology Journal** accepted manuscript on gray-box groundwater modeling for the Zhuoshui Alluvial Fan, Taiwan
 - 📚 **Publications & patent**: 4 peer-reviewed papers (3 SCIE-indexed, incl. *Hydrogeology Journal* 2026) · granted Taiwan patent **M661364**
-- 📊 **[aquascope-demos](https://github.com/Rekin226/aquascope-demos)**: real-world reproducible demo cases on public hydrology datasets
 - 🎓 **Numerical Analysis with Python**, graduate course taught at Feng Chia University
 - 💼 **POUK_YAM**, consulting and software at the intersection of scientific computing and agentic AI
 
