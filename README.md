@@ -52,7 +52,7 @@ Open-source Python toolkit that unifies global water data under one API.
 - **29 collectors** behind one schema: USGS, UK EA, Hub'Eau, GRDC, BOM, FAO, GEMStat, EU WFD
 - **26 methodologies** scored and auto-executed by an AI engine
 - **MCP server** + `aquascope ask` — Claude or Cursor gets stations, series, and cited flood frequency
-- Bulletin 17C · FAO-56 · CAMELS-validated · **1,000+ tests** · **15 outside contributors**
+- Bulletin 17C · FAO-56 · CAMELS-validated · **1,478 tests** · **15 outside contributors**
 
 [![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
 [![Support on Ko-fi](https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope)
@@ -107,7 +107,7 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 
 ## 📌 Recent work
 
-- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.10.0**: **29 data collectors** under one schema, an **MCP server** that hands Claude and Cursor real gauge data, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map, with flood frequency computed **in the browser** on Pyodide, no server. The catalog behind it is an open GeoParquet dataset, [`Rekin226/aquascope-gauges`](https://huggingface.co/datasets/Rekin226/aquascope-gauges), harvested weekly
+- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.10.0**: **29 data collectors** under one schema, an **MCP server** that hands Claude and Cursor real gauge data, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map, with flood frequency computed **in the browser** on Pyodide, no server. The open archive behind it, [`Rekin226/aquascope-gauges`](https://huggingface.co/datasets/Rekin226/aquascope-gauges), mirrors discharge, water level, rainfall and borehole groundwater as weekly-harvested GeoParquet
 - 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: the aquaponics agent gained **field senses** — photos and voice notes on Telegram, WhatsApp and the web. A vision model only *observes*; a deterministic guard strips any fabricated reading or prescription out of its description, and a cited triage table returns a ranked **differential** with the checks that discriminate, because a photograph cannot separate iron deficiency from pH lockout. **541 tests**, an advice-safety golden set that fails the build on a regression, and a prepared [Digital Public Good](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack (privacy, AI transparency, SDG mapping)
 - 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)**: GPU physics-informed neural operators benchmarked against per-well gray-box ODEs, with a live demo and an honest, reproducible benchmark harness
 - 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: packaged as a **Claude Code plugin (v1.5.0)** — draft/review/revise/proofread/audit manuscripts with Semantic Scholar MCP citation integrity, now broadened from hydrology to IEEE and a generic quantitative-science profile
