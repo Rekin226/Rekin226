@@ -135,7 +135,7 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 
 <img src="https://streak-stats.demolab.com?user=Rekin226&theme=react&hide_border=true" alt="streak" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=Rekin226&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" alt="trophies" />
+<img src="https://github-profile-trophy-seven-theta.vercel.app/?username=Rekin226&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" alt="trophies" />
 
 </div>
 
