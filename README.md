@@ -3,14 +3,13 @@
 # Abdoul Rachid Ouédraogo (韋正)
 
 <a href="https://github.com/Rekin226">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=760&lines=AI+%2F+ML+Engineer%2C+Ph.D.;LLM+fine-tuning%2C+agentic+systems%2C+physics-informed+ML;I+ship+the+evals%2C+not+just+the+demo;Research-to-production%3A+PyPI%2C+CUDA%2C+CI%2C+MCP" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=760&lines=AI+%2F+ML+Engineer;LLM+fine-tuning%2C+agentic+systems%2C+physics-informed+ML;I+ship+the+evals%2C+not+just+the+demo;Research-to-production%3A+PyPI%2C+CUDA%2C+CI%2C+MCP" alt="Typing SVG" />
 </a>
 
 **Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://www.poukyam.com)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?logo=huggingface&logoColor=black&style=for-the-badge)](https://huggingface.co/Rekin226)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
 [![Website](https://img.shields.io/badge/rachidouedraogo.com-2E9BF5?logo=googlechrome&logoColor=white&style=for-the-badge)](https://rachidouedraogo.com)
 [![Location](https://img.shields.io/badge/Taichung,_Taiwan-EF4444?logo=googlemaps&logoColor=white&style=for-the-badge)](https://www.google.com/maps/place/Taichung)
 
@@ -134,18 +133,8 @@ A Claude Code **plugin** that turns the agent into a disciplined manuscript coll
 - 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)** — the aquaponics agent gained **field senses** (photos and voice notes on Telegram, WhatsApp and the web) and, more importantly, the instruments to know whether it works: a 33-query retrieval golden set with recorded verdicts for **nine** techniques, an LLM-judged faithfulness eval beside a code-checked citation-accuracy score, and per-turn tracing that records latency and shape but never message content. **1,235 tests**, an advice-safety golden set that fails the build on a regression
 - 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)** — adding multi-timescale recharge memory and an ET driver lifted one shared operator from KGE 0.591 to **0.754**, past the 61 hand-calibrated ODEs it replaces. Leave-one-well-out generalization went 0.236 → **0.565**. The negative results (a continuous-field PINN, an adjoint rollout, three subsidence couplings) are written up with the same care as the wins
 - 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent) v1.5.0** — packaged as a **Claude Code plugin**, broadened from hydrology to IEEE and a generic quantitative-science profile
-- 📚 **Publications & patent** — 4 peer-reviewed papers (3 SCIE-indexed, incl. *Hydrogeology Journal* 2026) · granted Taiwan patent **M661364**
 - 🎓 **Numerical Analysis with Python** — graduate course taught at Feng Chia University
 - 💼 **[POUK YAM](https://www.poukyam.com)** — consulting and software at the intersection of agentic AI and scientific computing
-
-## 🎓 Background
-
-- **Ph.D.**, Infrastructure Planning & Engineering (groundwater modeling & hydrogeology), Feng Chia University, Taiwan · 2023
-- **M.S.**, Water Resources Engineering & Conservation, Feng Chia University, Taiwan · 2019
-- **B.S.**, Water & Environmental Engineering, 2iE, Ouagadougou, Burkina Faso · 2016
-- **Certifications**: Autonomous AI Agent Systems and Orchestration (LangGraph, AutoGen, multi-agent) · IBM AI Developer Professional Certificate
-
-🌐 Multilingual: French (native) · English (advanced) · Mandarin (working proficiency)
 
 ---
 
