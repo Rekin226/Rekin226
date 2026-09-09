@@ -18,22 +18,11 @@
 
 ---
 
-I build AI systems that survive contact with reality: fine-tuned LLMs, tool-calling agents, and physics-informed
-models, each shipped with the evaluation harness that says when it is wrong. Science is my proving ground because it
-punishes hand-waving. Everything below is open source, tested in CI, and reproducible from the repo.
+Building agentic AI platforms for national agencies: MCP servers, tool-calling analysts, data collectors,
+forecasting models, dashboards.
 
-## ⚡ AI engineering at a glance
-
-| What I do | Where I shipped it |
-| :--- | :--- |
-| **LLM fine-tuning** — LoRA / PEFT, low-resource NLP | NLLB-200 **3.3B** and Whisper-small adapters for Mooré, [published on Hugging Face](https://huggingface.co/Rekin226) |
-| **Agentic systems** — tool calling, MCP, multi-agent | An **MCP server** in AquaScope, a six-role research crew, a consultative agent on Telegram + WhatsApp |
-| **Evals & guardrails** — the part most demos skip | Retrieval golden sets, faithfulness + citation-accuracy scoring, an advice-safety suite that **fails the build** |
-| **GPU training** — CUDA, mixed precision | **14×** bf16 speedup, **6.7×** chunk-parallel ODE rollout, a native **NVIDIA PhysicsNeMo** port |
-| **Production ML** — packaging, CI, observability | 2 PyPI packages, Docker, GitHub Actions, **2,000+ tests**, per-turn tracing with p50/p95 latency |
-| **Scientific ML** — PINNs, neural operators, UQ | One shared operator beating **61** hand-calibrated models, with calibrated prediction intervals |
-
-Multilingual: French (native) · English (advanced) · Mandarin (working proficiency).
+**Background:** 6+ years across R&D, application development, and research, including LLM agents with RAG and ML
+shipped in a commercial product.
 
 ---
 
@@ -155,6 +144,8 @@ A Claude Code **plugin** that turns the agent into a disciplined manuscript coll
 - **M.S.**, Water Resources Engineering & Conservation, Feng Chia University, Taiwan · 2019
 - **B.S.**, Water & Environmental Engineering, 2iE, Ouagadougou, Burkina Faso · 2016
 - **Certifications**: Autonomous AI Agent Systems and Orchestration (LangGraph, AutoGen, multi-agent) · IBM AI Developer Professional Certificate
+
+🌐 Multilingual: French (native) · English (advanced) · Mandarin (working proficiency)
 
 ---
 
