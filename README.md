@@ -126,18 +126,6 @@ A Claude Code **plugin** that turns the agent into a disciplined manuscript coll
 
 ---
 
-## 📌 Recent work
-
-- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.15.1** — grew from a data library into an agent platform: an **MCP server** that hands Claude and Cursor real gauge data, a **six-role research crew** (`aquascope studio`) that writes a brief, proposes a methodology you approve, runs it with a check after every step and returns a Word/Excel/notebook bundle, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map with flood frequency computed **in the browser** on Pyodide, no server. Now **24 outside contributors**, a Zenodo DOI, and an open weekly-harvested GeoParquet archive on [Hugging Face](https://huggingface.co/datasets/Rekin226/aquascope-gauges)
-- 🗣️ **[Mooré-Voice](https://github.com/Rekin226/Moore-Voice)** — new. LoRA fine-tunes of **NLLB-200 3.3B** and Whisper-small for Mooré, my mother tongue, trained on a corpus I curated from scratch: 205k parallel pairs, LID-gated and decontaminated against FLORES-200, plus 85 hours of transcribed audio. Three adapters are on the Hub; the corpus goes upstream to Common Voice
-- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)** — the aquaponics agent gained **field senses** (photos and voice notes on Telegram, WhatsApp and the web) and, more importantly, the instruments to know whether it works: a 33-query retrieval golden set with recorded verdicts for **nine** techniques, an LLM-judged faithfulness eval beside a code-checked citation-accuracy score, and per-turn tracing that records latency and shape but never message content. **1,235 tests**, an advice-safety golden set that fails the build on a regression
-- 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)** — adding multi-timescale recharge memory and an ET driver lifted one shared operator from KGE 0.591 to **0.754**, past the 61 hand-calibrated ODEs it replaces. Leave-one-well-out generalization went 0.236 → **0.565**. The negative results (a continuous-field PINN, an adjoint rollout, three subsidence couplings) are written up with the same care as the wins
-- 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent) v1.5.0** — packaged as a **Claude Code plugin**, broadened from hydrology to IEEE and a generic quantitative-science profile
-- 🎓 **Numerical Analysis with Python** — graduate course taught at Feng Chia University
-- 💼 **[POUK YAM](https://www.poukyam.com)** — consulting and software at the intersection of agentic AI and scientific computing
-
----
-
 ## 📈 GitHub activity
 
 <div align="center">
