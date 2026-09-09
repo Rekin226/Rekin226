@@ -3,13 +3,14 @@
 # Abdoul Rachid Ouédraogo (韋正)
 
 <a href="https://github.com/Rekin226">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=720&lines=Data+Scientist+%26+ML+Researcher%2C+Ph.D.;Physics-informed+ML+%26+agentic+AI+for+science;Research-to-production+ML+engineer;Hydrogeologist+by+training%2C+AI+builder+by+practice" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=760&lines=AI+%2F+ML+Engineer%2C+Ph.D.;LLM+fine-tuning%2C+agentic+systems%2C+physics-informed+ML;I+ship+the+evals%2C+not+just+the+demo;Research-to-production%3A+PyPI%2C+CUDA%2C+CI%2C+MCP" alt="Typing SVG" />
 </a>
 
 **Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://www.poukyam.com)**
 
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?logo=huggingface&logoColor=black&style=for-the-badge)](https://huggingface.co/Rekin226)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?logo=googlescholar&logoColor=white&style=for-the-badge)](https://scholar.google.com/citations?user=AFrUnG0AAAAJ)
 [![Website](https://img.shields.io/badge/rachidouedraogo.com-2E9BF5?logo=googlechrome&logoColor=white&style=for-the-badge)](https://rachidouedraogo.com)
 [![Location](https://img.shields.io/badge/Taichung,_Taiwan-EF4444?logo=googlemaps&logoColor=white&style=for-the-badge)](https://www.google.com/maps/place/Taichung)
 
@@ -17,7 +18,22 @@
 
 ---
 
-I build AI for science: physics-informed machine learning, agentic AI, and the tested software that ships it. My depth is in hydrogeology and groundwater modeling, which I use as a proving ground for honest, reproducible scientific ML. I also teach numerical methods at Feng Chia University.
+I build AI systems that survive contact with reality: fine-tuned LLMs, tool-calling agents, and physics-informed
+models, each shipped with the evaluation harness that says when it is wrong. Science is my proving ground because it
+punishes hand-waving. Everything below is open source, tested in CI, and reproducible from the repo.
+
+## ⚡ AI engineering at a glance
+
+| What I do | Where I shipped it |
+| :--- | :--- |
+| **LLM fine-tuning** — LoRA / PEFT, low-resource NLP | NLLB-200 **3.3B** and Whisper-small adapters for Mooré, [published on Hugging Face](https://huggingface.co/Rekin226) |
+| **Agentic systems** — tool calling, MCP, multi-agent | An **MCP server** in AquaScope, a six-role research crew, a consultative agent on Telegram + WhatsApp |
+| **Evals & guardrails** — the part most demos skip | Retrieval golden sets, faithfulness + citation-accuracy scoring, an advice-safety suite that **fails the build** |
+| **GPU training** — CUDA, mixed precision | **14×** bf16 speedup, **6.7×** chunk-parallel ODE rollout, a native **NVIDIA PhysicsNeMo** port |
+| **Production ML** — packaging, CI, observability | 2 PyPI packages, Docker, GitHub Actions, **2,000+ tests**, per-turn tracing with p50/p95 latency |
+| **Scientific ML** — PINNs, neural operators, UQ | One shared operator beating **61** hand-calibrated models, with calibrated prediction intervals |
+
+Multilingual: French (native) · English (advanced) · Mandarin (working proficiency).
 
 ---
 
@@ -27,65 +43,77 @@ I build AI for science: physics-informed machine learning, agentic AI, and the t
 <tr>
 <td width="50%" valign="top">
 
-### [HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
-[![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
+### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 28
+[![PyPI](https://img.shields.io/badge/PyPI-v0.15.1-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903143-blue)](https://doi.org/10.5281/zenodo.21903143)
+[![MCP](https://img.shields.io/badge/MCP-server-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/aquascope)
 
-GPU physics-informed neural operators for groundwater, one model across 61 wells.
+Open-source Python toolkit that unifies global water data under one API, then puts an agent on top of it.
 
-- One attribute-conditioned operator vs **61** hand-calibrated ODEs
-- Generalizes to **unseen wells**: leave-one-well-out **KGE 0.565** (climatology 0.446, in-sample 0.591)
-- Forecast LSTM beats persistence at **7 & 30 days**, calibrated intervals
-- **14×** GPU speedup (CUDA, bf16) · NVIDIA **PhysicsNeMo** port
+- **29 collectors** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, FAO, GEMStat, EU WFD
+- **MCP server** — Claude or Cursor gets stations, series, and cited flood frequency as real tools
+- **Studio**: a six-role agent crew (scout, methodologist, analysts, critic, author) plans, runs, and returns a Word + Excel + notebook bundle
+- **HydroGym**: gym-style RL environment for model calibration on real basins
+- **1,000+ tests** · CAMELS-validated · **24 outside contributors** · Zenodo-archived
 
-[![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
+[![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges_in--browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
 
 </td>
 <td width="50%" valign="top">
 
-### [AquaScope](https://github.com/Rekin226/aquascope)
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/aquascope)
-[![PyPI](https://img.shields.io/badge/PyPI-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+### [Agronaut](https://github.com/Rekin226/Agronaut)
+[![PyPI](https://img.shields.io/badge/PyPI-agronaut-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/agronaut/)
+[![Open weights](https://img.shields.io/badge/open_weights-Ollama_%7C_vLLM-1C3C3C)](https://github.com/Rekin226/Agronaut)
 
-Open-source Python toolkit that unifies global water data under one API.
+Multimodal tool-calling agent over a deterministic, cited engineering core. Zero proprietary APIs.
 
-- **29 collectors** behind one schema: USGS, UK EA, Hub'Eau, GRDC, BOM, FAO, GEMStat, EU WFD
-- **26 methodologies** scored and auto-executed by an AI engine
-- **MCP server** + `aquascope ask` — Claude or Cursor gets stations, series, and cited flood frequency
-- Bulletin 17C · FAO-56 · CAMELS-validated · **1,478 tests** · **15 outside contributors**
-
-[![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
-[![Support on Ko-fi](https://img.shields.io/badge/Support_on-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope)
+- LLM collects and routes; a **validation gate** guards a pure, tested trust zone that does the math
+- **Photos and voice notes** on Telegram, WhatsApp, and the web — a guard strips any fabricated reading, and a cited table returns a ranked **differential**, never a verdict
+- **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic queries refused. Nine techniques benchmarked, four ship, every verdict recorded
+- Faithfulness + **citation-accuracy** eval; per-turn tracing that records shape, never content
+- **1,235 tests** · advice-safety golden set enforced in CI · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [Agronaut](https://github.com/Rekin226/Agronaut)
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://github.com/Rekin226/Agronaut)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)](https://github.com/Rekin226/Agronaut)
+### [HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
+[![PhysicsNeMo](https://img.shields.io/badge/NVIDIA-PhysicsNeMo-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
-Tool-calling aquaponics agent over a deterministic, tested, cited engineering core.
+GPU physics-informed neural operators. One model replaces 61 hand-calibrated ones.
 
-- LLM collects and routes; a verifiable trust zone does the math
-- **Photos and voice notes** on Telegram, WhatsApp, and the web
-- Vision only *observes*: a guard strips fabricated readings, and a cited table returns a ranked **differential**, never a verdict
-- **541 tests** · advice-safety golden set enforced in CI · runs on self-hosted open weights
+- Simulation **KGE 0.754** vs **0.736** for 61 per-well calibrated ODEs (climatology 0.446)
+- Generalizes to **wells it never saw**: leave-one-well-out **0.565**, near the in-sample 0.591
+- Forecast LSTM: **0.899** at 30 days vs 0.703 persistence, with ~90% calibrated intervals
+- **14×** bf16 GPU speedup · **6.7×** parallel rollout · PhysicsNeMo port, bit-identical
+- Negative results published, not buried: the PINN field, the adjoint solver, the subsidence coupling
+
+[![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
 </td>
 <td width="50%" valign="top">
 
-### [paper-agent](https://github.com/Rekin226/paper-agent)
-[![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.5.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent)
-[![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
+### [Mooré-Voice](https://github.com/Rekin226/Moore-Voice)
+[![NLLB](https://img.shields.io/badge/NLLB--200-3.3B_LoRA-0668E1?logo=meta&logoColor=white)](https://huggingface.co/Rekin226/nllb-3.3B-moore-lora-v0)
+[![Whisper](https://img.shields.io/badge/Whisper-fine--tuned-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/Rekin226/whisper-small-moore-v0)
 
-Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator.
+Translation and speech recognition for Mooré, a language of ~8M people and almost no training data.
 
-- Five modes: draft, review, revise, proofread, audit
-- **Semantic Scholar MCP** citations (no API key), anti-fabrication guardrails
-- Hydrology (HJ, JHRS) + IEEE + a generic quantitative-science profile
-- Clean `.docx` round-trip; bundled try-it demos
+- Curated **205,271 parallel pairs** across 4 directions: LID-gated, fragment-filtered, decontaminated against FLORES-200
+- **LoRA fine-tunes** of NLLB-200 600M **and 3.3B** on a single consumer RTX 4070
+- ASR corpus of **37,654 utterances / 85 h**; Whisper-small at **34.1% WER**, benchmarked against an MMS-1b zero-shot baseline
+- Three adapters published on the Hub · BLEU / chrF++ on FLORES-200 devtest · Colab demo
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### [paper-agent](https://github.com/Rekin226/paper-agent) ⭐ 8 · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.5.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent) [![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
+
+A Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator — five strict modes (draft, review, revise, proofread, audit), **Semantic Scholar MCP** citation resolution with no API key, anti-fabrication guardrails, and a clean `.docx` round-trip. Ships journal profiles for Hydrogeology Journal, JHRS, and IEEE TIM, plus a generic quantitative-science profile. Install with one command: `/plugin marketplace add Rekin226/paper-agent`.
 
 </td>
 </tr>
@@ -93,36 +121,40 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 
 ---
 
-## 🔬 Research interests
-
-`Physics-informed & scientific ML` · `Agentic AI for science` · `Groundwater modeling & hydrogeology` · `Numerical methods & scientific computing` · `Sustainable water resources`
-
 ## 🛠️ Tech stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,streamlit,docker,git,github,linux,jupyter,latex" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,django,docker,kubernetes,postgres,redis,react,azure,githubactions,linux,git" alt="tech stack" />
 </p>
+
+`PyTorch` · `Hugging Face (transformers, PEFT, datasets)` · `LangChain` · `LangGraph` · `AutoGen` · `MCP` · `CUDA / bf16` ·
+`NVIDIA PhysicsNeMo` · `RAG & vector search (FAISS)` · `Ollama / vLLM` · `pandas` · `NumPy` · `SciPy` · `FastAPI` ·
+`Django` · `PostgreSQL` · `Docker` · `GitHub Actions` · `pytest` · `Streamlit` · `Gradio`
+
+## 🔬 Interests
+
+`Agentic AI & tool use` · `LLM fine-tuning for low-resource languages` · `Evaluation, guardrails & AI safety in production` ·
+`Physics-informed & scientific ML` · `Uncertainty quantification` · `AI as a digital public good`
 
 ---
 
 ## 📌 Recent work
 
-- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.10.0**: **29 data collectors** under one schema, an **MCP server** that hands Claude and Cursor real gauge data, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map, with flood frequency computed **in the browser** on Pyodide, no server. The open archive behind it, [`Rekin226/aquascope-gauges`](https://huggingface.co/datasets/Rekin226/aquascope-gauges), mirrors discharge, water level, rainfall and borehole groundwater as weekly-harvested GeoParquet
-- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)**: the aquaponics agent gained **field senses** — photos and voice notes on Telegram, WhatsApp and the web. A vision model only *observes*; a deterministic guard strips any fabricated reading or prescription out of its description, and a cited triage table returns a ranked **differential** with the checks that discriminate, because a photograph cannot separate iron deficiency from pH lockout. **541 tests**, an advice-safety golden set that fails the build on a regression, and a prepared [Digital Public Good](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack (privacy, AI transparency, SDG mapping)
-- 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)**: GPU physics-informed neural operators benchmarked against per-well gray-box ODEs, with a live demo and an honest, reproducible benchmark harness
-- 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent)**: packaged as a **Claude Code plugin (v1.5.0)** — draft/review/revise/proofread/audit manuscripts with Semantic Scholar MCP citation integrity, now broadened from hydrology to IEEE and a generic quantitative-science profile
-- 📄 **Hydrogeology Journal** accepted manuscript on gray-box groundwater modeling for the Zhuoshui Alluvial Fan, Taiwan
-- 📚 **Publications & patent**: 4 peer-reviewed papers (3 SCIE-indexed, incl. *Hydrogeology Journal* 2026) · granted Taiwan patent **M661364**
-- 🎓 **Numerical Analysis with Python**, graduate course taught at Feng Chia University
-- 💼 **POUK_YAM**, consulting and software at the intersection of scientific computing and agentic AI
+- 🌊 **[AquaScope](https://github.com/Rekin226/aquascope) v0.15.1** — grew from a data library into an agent platform: an **MCP server** that hands Claude and Cursor real gauge data, a **six-role research crew** (`aquascope studio`) that writes a brief, proposes a methodology you approve, runs it with a check after every step and returns a Word/Excel/notebook bundle, and the **[Explorer](https://rekin226-aquascope-explorer.static.hf.space/)** — 45,919 public gauges on one map with flood frequency computed **in the browser** on Pyodide, no server. Now **24 outside contributors**, a Zenodo DOI, and an open weekly-harvested GeoParquet archive on [Hugging Face](https://huggingface.co/datasets/Rekin226/aquascope-gauges)
+- 🗣️ **[Mooré-Voice](https://github.com/Rekin226/Moore-Voice)** — new. LoRA fine-tunes of **NLLB-200 3.3B** and Whisper-small for Mooré, my mother tongue, trained on a corpus I curated from scratch: 205k parallel pairs, LID-gated and decontaminated against FLORES-200, plus 85 hours of transcribed audio. Three adapters are on the Hub; the corpus goes upstream to Common Voice
+- 🌱 **[Agronaut](https://github.com/Rekin226/Agronaut)** — the aquaponics agent gained **field senses** (photos and voice notes on Telegram, WhatsApp and the web) and, more importantly, the instruments to know whether it works: a 33-query retrieval golden set with recorded verdicts for **nine** techniques, an LLM-judged faithfulness eval beside a code-checked citation-accuracy score, and per-turn tracing that records latency and shape but never message content. **1,235 tests**, an advice-safety golden set that fails the build on a regression
+- 🧠 **[HydroPhysicsAI](https://github.com/Rekin226/HydroPhysicsAI)** — adding multi-timescale recharge memory and an ET driver lifted one shared operator from KGE 0.591 to **0.754**, past the 61 hand-calibrated ODEs it replaces. Leave-one-well-out generalization went 0.236 → **0.565**. The negative results (a continuous-field PINN, an adjoint rollout, three subsidence couplings) are written up with the same care as the wins
+- 🤖 **[paper-agent](https://github.com/Rekin226/paper-agent) v1.5.0** — packaged as a **Claude Code plugin**, broadened from hydrology to IEEE and a generic quantitative-science profile
+- 📚 **Publications & patent** — 4 peer-reviewed papers (3 SCIE-indexed, incl. *Hydrogeology Journal* 2026) · granted Taiwan patent **M661364**
+- 🎓 **Numerical Analysis with Python** — graduate course taught at Feng Chia University
+- 💼 **[POUK YAM](https://www.poukyam.com)** — consulting and software at the intersection of agentic AI and scientific computing
 
 ## 🎓 Background
 
 - **Ph.D.**, Infrastructure Planning & Engineering (groundwater modeling & hydrogeology), Feng Chia University, Taiwan · 2023
 - **M.S.**, Water Resources Engineering & Conservation, Feng Chia University, Taiwan · 2019
-- **Undergraduate**, 2iE (Institut International d'Ingénierie de l'Eau et de l'Environnement), Ouagadougou, Burkina Faso
-
-🌐 Multilingual: French (native) · English (advanced) · Mandarin (working proficiency)
+- **B.S.**, Water & Environmental Engineering, 2iE, Ouagadougou, Burkina Faso · 2016
+- **Certifications**: Autonomous AI Agent Systems and Orchestration (LangGraph, AutoGen, multi-agent) · IBM AI Developer Professional Certificate
 
 ---
 
@@ -142,6 +174,9 @@ Claude Code **plugin** that turns the agent into a disciplined manuscript collab
 ---
 
 <div align="center">
+
+**Open to conversations about AI/ML engineering roles and collaborations.**
+[LinkedIn](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7) · [rachidouedraogo.com](https://rachidouedraogo.com)
 
 [![POUK_YAM](https://img.shields.io/badge/POUK_YAM-2E9BF5?logo=googlechrome&logoColor=white)](https://www.poukyam.com)
 [![AquaScope](https://img.shields.io/badge/⭐_AquaScope-2E9BF5?logo=github&logoColor=white)](https://github.com/Rekin226/aquascope)
