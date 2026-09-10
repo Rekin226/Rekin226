@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9BF5&center=true&vCenter=true&width=760&lines=AI+%2F+ML+Engineer;LLM+fine-tuning%2C+agentic+systems%2C+physics-informed+ML;I+ship+the+evals%2C+not+just+the+demo;Research-to-production%3A+PyPI%2C+CUDA%2C+CI%2C+MCP" alt="Typing SVG" />
 </a>
 
-**Applied AI Researcher @ Taiwan Polar Institute** · **Adjunct Instructor @ FCU** · **Founder of [POUK YAM](https://www.poukyam.com)**
+**Applied AI Researcher @ Taiwan Polar Institute** · **Founder of [POUK YAM](https://www.poukyam.com)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/abdoul-rachid-ou%C3%A9draogo-ph-d-4a08481b7)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?logo=huggingface&logoColor=black&style=for-the-badge)](https://huggingface.co/Rekin226)
