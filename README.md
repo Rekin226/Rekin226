@@ -32,34 +32,35 @@ shipped in a commercial product.
 <td width="50%" valign="top">
 
 ### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 28
-[![PyPI](https://img.shields.io/badge/PyPI-v0.15.1-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+[![PyPI](https://img.shields.io/badge/PyPI-v0.18.0-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903143-blue)](https://doi.org/10.5281/zenodo.21903143)
 [![MCP](https://img.shields.io/badge/MCP-server-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/aquascope)
 
 Open-source Python toolkit that unifies global water data under one API, then puts an agent on top of it.
 
-- **29 collectors** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, FAO, GEMStat, EU WFD
+- **37 collectors** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, BOM, Brazil ANA, FAO, GEMStat, EU WFD
 - **MCP server** — Claude or Cursor gets stations, series, and cited flood frequency as real tools
-- **Studio**: a six-role agent crew (scout, methodologist, analysts, critic, author) plans, runs, and returns a Word + Excel + notebook bundle
-- **HydroGym**: gym-style RL environment for model calibration on real basins
-- **1,000+ tests** · CAMELS-validated · **24 outside contributors** · Zenodo-archived
+- **Studio**: a seven-role agent crew (consultant, scout, methodologist, analysts, interpreter, critic, author) plans, gates every step, and returns a Word + Excel + figures + notebook bundle
+- **HydroGym**: gym-style RL environment for model calibration on real basins, plus a benchmark that scores hydrology agents on real sites
+- **2,800+ tests** · CAMELS-validated · **28 outside contributors** · Zenodo-archived
 
-[![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges_in--browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
+[![Explorer](https://img.shields.io/badge/🌊_Explorer-67,912_gauges_in--browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
+[![Dataset](https://img.shields.io/badge/🤗_aquascope--gauges-open_GeoParquet-FFD21E)](https://huggingface.co/datasets/Rekin226/aquascope-gauges)
 
 </td>
 <td width="50%" valign="top">
 
 ### [Agronaut](https://github.com/Rekin226/Agronaut)
-[![PyPI](https://img.shields.io/badge/PyPI-agronaut-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/agronaut/)
+[![PyPI](https://img.shields.io/badge/PyPI-v1.1.0-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/agronaut/)
 [![Open weights](https://img.shields.io/badge/open_weights-Ollama_%7C_vLLM-1C3C3C)](https://github.com/Rekin226/Agronaut)
 
 Multimodal tool-calling agent over a deterministic, cited engineering core. Zero proprietary APIs.
 
 - LLM collects and routes; a **validation gate** guards a pure, tested trust zone that does the math
+- `pip install agronaut && agronaut size …` returns a buildable design — bill of materials, operating envelope, a source per number — **offline, no key, no account**
 - **Photos and voice notes** on Telegram, WhatsApp, and the web — a guard strips any fabricated reading, and a cited table returns a ranked **differential**, never a verdict
 - **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic queries refused. Nine techniques benchmarked, four ship, every verdict recorded
-- Faithfulness + **citation-accuracy** eval; per-turn tracing that records shape, never content
-- **1,235 tests** · advice-safety golden set enforced in CI · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
+- **1,235 tests** · advice-safety golden set enforced in CI · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack · sizing method granted as Taiwan utility model **TW M661364**
 
 </td>
 </tr>
@@ -70,15 +71,13 @@ Multimodal tool-calling agent over a deterministic, cited engineering core. Zero
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 [![PhysicsNeMo](https://img.shields.io/badge/NVIDIA-PhysicsNeMo-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
-GPU physics-informed neural operators. One model replaces 61 hand-calibrated ones.
+A differentiable digital twin of the Choushui alluvial fan, Taiwan: pumping policy in, groundwater heads and land subsidence out.
 
-- Simulation **KGE 0.754** vs **0.736** for 61 per-well calibrated ODEs (climatology 0.446)
-- Generalizes to **wells it never saw**: leave-one-well-out **0.565**, near the in-sample 0.591
-- Forecast LSTM: **0.899** at 30 days vs 0.703 persistence, with ~90% calibrated intervals
-- **14×** bf16 GPU speedup · **6.7×** parallel rollout · PhysicsNeMo port, bit-identical
-- Negative results published, not buried: the PINN field, the adjoint solver, the subsidence coupling
-
-[![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
+- Four-layer finite-volume solver on a 1 km grid, calibrated by **gradient descent through its own adjoint**, coupled to a visco-elasto-plastic compaction column
+- Gated on held-out data at every stage: flow **R² 0.804** vs 0.702 for inverse-distance interpolation; compaction **0.546** out of fold; full-chain hindcast **R² 0.526**, RMSE 6.6 cm over 798 leveling sites
+- Real forcing: 174 monitoring wells, a **116,769-pump** electricity census (26 M meter-months), 798 leveling benchmarks, 2012–2022
+- Policy runs with an 18-member ensemble — 2023–2032 fan-mean subsidence 10.0 ± 1.3 cm baseline · 609 s per sweep on one GPU · **13–34×** again with the PhysicsNeMo FNO surrogate
+- Negative results published, not buried: the held-out-*years* gate drifts within three years, and the README says so
 
 </td>
 <td width="50%" valign="top">
@@ -91,8 +90,8 @@ Translation and speech recognition for Mooré, a language of ~8M people and almo
 
 - Curated **205,271 parallel pairs** across 4 directions: LID-gated, fragment-filtered, decontaminated against FLORES-200
 - **LoRA fine-tunes** of NLLB-200 600M **and 3.3B** on a single consumer RTX 4070
-- ASR corpus of **37,654 utterances / 85 h**; Whisper-small at **34.1% WER**, benchmarked against an MMS-1b zero-shot baseline
-- Three adapters published on the Hub · BLEU / chrF++ on FLORES-200 devtest · Colab demo
+- ASR corpus of **37,654 utterances / 85 h**; Whisper-small at 34.1% WER — honestly behind the MMS-1b zero-shot baseline at 31.1%, which is what the demo ships with
+- Three adapters published on the Hub · BLEU / chrF++ on FLORES-200 devtest · [Colab demo](https://colab.research.google.com/github/Rekin226/Moore-Voice/blob/main/notebooks/moore_voice_demo.ipynb) with a public link
 
 </td>
 </tr>
@@ -101,7 +100,7 @@ Translation and speech recognition for Mooré, a language of ~8M people and almo
 
 ### [paper-agent](https://github.com/Rekin226/paper-agent) ⭐ 8 · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.5.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent) [![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
 
-A Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator — five strict modes (draft, review, revise, proofread, audit), **Semantic Scholar MCP** citation resolution with no API key, anti-fabrication guardrails, and a clean `.docx` round-trip. Ships journal profiles for Hydrogeology Journal, JHRS, and IEEE TIM, plus a generic quantitative-science profile. Install with one command: `/plugin marketplace add Rekin226/paper-agent`.
+A Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator — five strict modes (draft, review, revise, proofread, audit), **Semantic Scholar MCP** citation resolution with no API key, anti-fabrication guardrails, and a clean `.docx` round-trip. Audit mode catches what authors miss: sample-size drift, temporal arithmetic, abstract-vs-results conflicts, broken cross-references. Ships journal profiles for Hydrogeology Journal, JHRS, and IEEE TIM, plus a generic quantitative-science profile, and two synthetic demos you can run in a minute. Install with one command: `/plugin marketplace add Rekin226/paper-agent`.
 
 </td>
 </tr>
@@ -117,7 +116,7 @@ A Claude Code **plugin** that turns the agent into a disciplined manuscript coll
 
 `PyTorch` · `Hugging Face (transformers, PEFT, datasets)` · `LangChain` · `LangGraph` · `AutoGen` · `MCP` · `CUDA / bf16` ·
 `NVIDIA PhysicsNeMo` · `RAG & vector search (FAISS)` · `Ollama / vLLM` · `pandas` · `NumPy` · `SciPy` · `FastAPI` ·
-`Django` · `PostgreSQL` · `Docker` · `GitHub Actions` · `pytest` · `Streamlit` · `Gradio`
+`Django` · `PostgreSQL` · `Docker` · `GitHub Actions` · `pytest` · `Streamlit` · `Gradio` · `Pyodide`
 
 ## 🔬 Interests
 
