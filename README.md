@@ -70,13 +70,13 @@ Multimodal tool-calling agent over a deterministic, cited engineering core. Zero
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 [![PhysicsNeMo](https://img.shields.io/badge/NVIDIA-PhysicsNeMo-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
-GPU physics-informed neural operators. One model replaces 61 hand-calibrated ones.
+A differentiable digital twin of Taiwan's Choushui alluvial fan: pumping policy in, groundwater heads and land subsidence out, gated against held-out data at every stage.
 
-- Simulation **KGE 0.754** vs **0.736** for 61 per-well calibrated ODEs (climatology 0.446)
-- Generalizes to **wells it never saw**: leave-one-well-out **0.565**, near the in-sample 0.591
-- Forecast LSTM: **0.899** at 30 days vs 0.703 persistence, with ~90% calibrated intervals
-- **14×** bf16 GPU speedup · **6.7×** parallel rollout · PhysicsNeMo port, bit-identical
-- Negative results published, not buried: the PINN field, the adjoint solver, the subsidence coupling
+- **174 monitoring wells**, **116,769 metered pumps**, **798 leveling benchmarks**, 2012–2022, on a 1 km four-aquifer grid
+- Adjoint-calibrated flow solver with a physical pumping stress: held-out-well **R² 0.804** vs 0.702 for inverse-distance interpolation
+- Compaction column calibrated on the leveling network: **R² 0.546** out of fold; full chain hindcast **0.526** on 798 sites
+- Policy projections to 2032 with a fold and posterior ensemble; 18 members × 3 policies in **609 s** on one GPU, PhysicsNeMo FNO surrogate 13–34× faster again
+- Every gate verdict recorded, including the failed configurations and the held-out-years result
 
 [![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
