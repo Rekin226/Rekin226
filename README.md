@@ -31,35 +31,36 @@ shipped in a commercial product.
 <tr>
 <td width="50%" valign="top">
 
-### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 28
-[![PyPI](https://img.shields.io/badge/PyPI-v0.15.1-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 30
+[![PyPI](https://img.shields.io/badge/PyPI-v0.27.0-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903143-blue)](https://doi.org/10.5281/zenodo.21903143)
 [![MCP](https://img.shields.io/badge/MCP-server-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/aquascope)
 
-Open-source Python toolkit that unifies global water data under one API, then puts an agent on top of it.
+Explore river records and run reproducible water analyses in your browser or in Python, with an agent on top.
 
-- **29 collectors** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, FAO, GEMStat, EU WFD
-- **MCP server** — Claude or Cursor gets stations, series, and cited flood frequency as real tools
-- **Studio**: a six-role agent crew (scout, methodologist, analysts, critic, author) plans, runs, and returns a Word + Excel + notebook bundle
-- **HydroGym**: gym-style RL environment for model calibration on real basins
-- **1,000+ tests** · CAMELS-validated · **24 outside contributors** · Zenodo-archived
+- **37 global water-data sources** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, FAO, GEMStat, EU WFD
+- **Every river on a globe**: ~6.8M GEOGLOWS reaches, 15-day forecasts, an A to D evidence ladder grading global models, flood layers back to 1990
+- **AI on the map**: ask the map, explain this view, review your model results, run what-if scenarios
+- **Studio**: a seven-role agent crew plans, runs, and signs off a study, returning Word, Excel, notebook, and engineering exports (HEC-RAS/HMS, SWMM, MODFLOW 6)
+- **MCP server** for Claude or Cursor · **HydroGym** RL calibration environment
+- **3,200+ tests** · CAMELS-validated · **30+ outside contributors** · Zenodo-archived
 
-[![Explorer](https://img.shields.io/badge/🌊_Explorer-45,919_gauges_in--browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
+[![Explorer](https://img.shields.io/badge/🌊_Explorer-open_in_browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
 
 </td>
 <td width="50%" valign="top">
 
-### [Agronaut](https://github.com/Rekin226/Agronaut)
-[![PyPI](https://img.shields.io/badge/PyPI-agronaut-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/agronaut/)
-[![Open weights](https://img.shields.io/badge/open_weights-Ollama_%7C_vLLM-1C3C3C)](https://github.com/Rekin226/Agronaut)
+### [Agronaut](https://github.com/Rekin226/Agronaut) ⭐ 5
+[![PyPI](https://img.shields.io/badge/PyPI-v1.4.0-3776AB?logo=pypi&logoColor=white)](https://pypi.org/project/agronaut/)
+[![Runs local](https://img.shields.io/badge/runs_local-Ollama-1C3C3C)](https://github.com/Rekin226/Agronaut)
 
-Multimodal tool-calling agent over a deterministic, cited engineering core. Zero proprietary APIs.
+Open-source agriculture assistant you run on your own machine: a multimodal tool-calling agent over a deterministic, cited engineering core.
 
-- LLM collects and routes; a **validation gate** guards a pure, tested trust zone that does the math
-- **Photos and voice notes** on Telegram, WhatsApp, and the web — a guard strips any fabricated reading, and a cited table returns a ranked **differential**, never a verdict
-- **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic queries refused. Nine techniques benchmarked, four ship, every verdict recorded
-- Faithfulness + **citation-accuracy** eval; per-turn tracing that records shape, never content
-- **1,235 tests** · advice-safety golden set enforced in CI · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
+- LLM collects and routes; a **validation gate** guards a pure, tested trust zone that does the math, and every number in a reply is checked against what the engine computed
+- Cited **aquaponics and hydroponics design** (10 fish, 34 crops), farm and crop records, and experimental field-irrigation checks (drip, sprinkler, soil water)
+- **Photos and voice notes** on Telegram, WhatsApp, and the web; a cited table returns a ranked **differential**, never a verdict
+- **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic refused; nine techniques benchmarked, four ship. Faithfulness ~0.8, citation accuracy 1.00, judge agreement reported too
+- **1,770+ tests** · advice-safety golden set in CI · `agronaut eval` · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
 
 </td>
 </tr>
@@ -70,13 +71,12 @@ Multimodal tool-calling agent over a deterministic, cited engineering core. Zero
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 [![PhysicsNeMo](https://img.shields.io/badge/NVIDIA-PhysicsNeMo-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
-A differentiable digital twin of Taiwan's Choushui alluvial fan: pumping policy in, groundwater heads and land subsidence out, gated against held-out data at every stage.
+A differentiable research twin of Taiwan's Choushui alluvial fan: pumping policy in, groundwater heads and land subsidence out, gated against held-out data at every stage.
 
 - **174 monitoring wells**, **116,769 metered pumps**, **798 leveling benchmarks**, 2012–2022, on a 1 km four-aquifer grid
-- Adjoint-calibrated flow solver with a physical pumping stress: held-out-well **R² 0.804** vs 0.702 for inverse-distance interpolation
-- Compaction column calibrated on the leveling network: **R² 0.546** out of fold; full chain hindcast **0.526** on 798 sites
-- Policy projections to 2032 with a fold and posterior ensemble; 18 members × 3 policies in **609 s** on one GPU, PhysicsNeMo FNO surrogate 13–34× faster again
-- Every gate verdict recorded, including the failed configurations and the held-out-years result
+- Full chain hindcast of subsidence: **R² 0.639, RMSE 5.7 cm** across 36 ensemble members; compaction column **R² 0.652** out of fold
+- Policy projections to 2032 (36 members × 3 policies × 21 years in ~50 min on one GPU) and a decision app with orthophoto and terrain
+- **Failures published, not hidden**: on new 2023–2026 data the frozen forecast loses to seasonal climatology (RMSE 2.07 m vs 1.67 m), and every gate verdict is in the README
 
 [![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
@@ -84,24 +84,25 @@ A differentiable digital twin of Taiwan's Choushui alluvial fan: pumping policy 
 <td width="50%" valign="top">
 
 ### [Mooré-Voice](https://github.com/Rekin226/Moore-Voice)
+[![MMS](https://img.shields.io/badge/MMS--1b-fine--tuned_ASR-0668E1?logo=meta&logoColor=white)](https://github.com/Rekin226/Moore-Voice)
 [![NLLB](https://img.shields.io/badge/NLLB--200-3.3B_LoRA-0668E1?logo=meta&logoColor=white)](https://huggingface.co/Rekin226/nllb-3.3B-moore-lora-v0)
-[![Whisper](https://img.shields.io/badge/Whisper-fine--tuned-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/Rekin226/whisper-small-moore-v0)
 
-Translation and speech recognition for Mooré, a language of ~8M people and almost no training data.
+Speech recognition and translation for Mooré, a language of ~8M people and almost no training data.
 
+- ASR corpus of **37,654 utterances / 85 h**; fine-tuned MMS-1b reaches **16.8% WER / 4.3% CER** on 564 held-out utterances, vs 31.1% zero-shot
 - Curated **205,271 parallel pairs** across 4 directions: LID-gated, fragment-filtered, decontaminated against FLORES-200
 - **LoRA fine-tunes** of NLLB-200 600M **and 3.3B** on a single consumer RTX 4070
-- ASR corpus of **37,654 utterances / 85 h**; Whisper-small at **34.1% WER**, benchmarked against an MMS-1b zero-shot baseline
-- Three adapters published on the Hub · BLEU / chrF++ on FLORES-200 devtest · Colab demo
+- Honest about what isn't solved: a native-speaker blind A/B puts translation at a coin flip, so it ships as unproven
+- Three adapters on the Hub · Colab demo
 
 </td>
 </tr>
 <tr>
 <td colspan="2" valign="top">
 
-### [paper-agent](https://github.com/Rekin226/paper-agent) ⭐ 8 · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.5.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent) [![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
+### [paper-agent](https://github.com/Rekin226/paper-agent) ⭐ 8 · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin_v1.7.0-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/paper-agent) [![Semantic Scholar](https://img.shields.io/badge/Semantic_Scholar-MCP-1857B6)](https://github.com/Rekin226/paper-agent)
 
-A Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator — five strict modes (draft, review, revise, proofread, audit), **Semantic Scholar MCP** citation resolution with no API key, anti-fabrication guardrails, and a clean `.docx` round-trip. Ships journal profiles for Hydrogeology Journal, JHRS, and IEEE TIM, plus a generic quantitative-science profile. Install with one command: `/plugin marketplace add Rekin226/paper-agent`.
+A Claude Code **plugin** that turns the agent into a disciplined manuscript collaborator. Six strict modes (draft, review, revise, proofread, audit, format), **Semantic Scholar MCP** citation resolution with no API key, anti-fabrication guardrails, a number checker that traces every figure to its source, and a submission-ready `.docx` with a compliance report. Ships profiles for 10 journals (Hydrogeology Journal, J. Hydrology, WRR, HESS, Groundwater, IEEE TIM, and more) plus a generic quantitative-science profile. Install with one command: `/plugin marketplace add Rekin226/paper-agent`.
 
 </td>
 </tr>
