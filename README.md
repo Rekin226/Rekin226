@@ -31,7 +31,7 @@ shipped in a commercial product.
 <tr>
 <td width="50%" valign="top">
 
-### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 30
+### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 31
 [![PyPI](https://img.shields.io/badge/PyPI-v1.1.0-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903143-blue)](https://doi.org/10.5281/zenodo.21903143)
 [![MCP](https://img.shields.io/badge/MCP-server-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/aquascope)
@@ -44,7 +44,7 @@ Explore river records and run reproducible water analyses in your browser or in 
 - **AI on the map**: ask the map, explain this view, review your model results; MODFLOW and HEC-RAS 2D results read like a modeller's tools (3D layers, sections, water budget, flood exposure)
 - **Studio**: a seven-role agent crew plans, runs, and signs off a study, returning Word, Excel, notebook, and engineering exports (HEC-RAS/HMS, SWMM, MODFLOW 6)
 - **MCP server** for Claude or Cursor · **HydroGym** RL calibration environment
-- **3,200+ tests** · CAMELS-validated · **30+ outside contributors** · Zenodo-archived
+- **3,200+ tests** · CAMELS-validated · **31 outside contributors** · **43 forks** · Zenodo-archived
 
 [![Explorer](https://img.shields.io/badge/🌊_Explorer-open_in_browser-2E9BF5)](https://rekin226-aquascope-explorer.static.hf.space/)
 
@@ -62,7 +62,7 @@ Open-source agriculture assistant you run on your own machine: a multimodal tool
 - **Photos and voice notes** on Telegram, WhatsApp, and the web; a cited table returns a ranked **differential**, never a verdict
 - **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic refused; nine techniques benchmarked, four ship. Faithfulness ~0.8, citation accuracy 1.00, judge agreement reported too
 - Season simulation with real climate data in an **offline 3D view**, with a top-down layout plan (air side sized from FAO 589) sent where the 3D page cannot go
-- **1,770+ tests** · advice-safety golden set in CI · `agronaut eval` · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack · sizing method is a granted Taiwan utility model patent (TW M661364)
+- **1,770+ tests** · **15 outside contributors** · advice-safety golden set in CI · `agronaut eval` · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack · sizing method is a granted Taiwan utility model patent (TW M661364)
 
 </td>
 </tr>
