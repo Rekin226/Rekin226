@@ -32,15 +32,16 @@ shipped in a commercial product.
 <td width="50%" valign="top">
 
 ### [AquaScope](https://github.com/Rekin226/aquascope) ⭐ 30
-[![PyPI](https://img.shields.io/badge/PyPI-v0.27.0-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
+[![PyPI](https://img.shields.io/badge/PyPI-v1.1.0-2E9BF5?logo=pypi&logoColor=white)](https://pypi.org/project/aquascope/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903143-blue)](https://doi.org/10.5281/zenodo.21903143)
 [![MCP](https://img.shields.io/badge/MCP-server-D97757?logo=anthropic&logoColor=white)](https://github.com/Rekin226/aquascope)
 
-Explore river records and run reproducible water analyses in your browser or in Python, with an agent on top.
+Explore river records and run reproducible water analyses in your browser or in Python, with an agent on top. **1.0 shipped in October** with a written stability promise: a tested public Python, CLI, MCP and Archive surface, no breaking change before 2.0.
 
 - **37 global water-data sources** behind one Pydantic schema: USGS, UK EA, Hub'Eau, GRDC, FAO, GEMStat, EU WFD
 - **Every river on a globe**: ~6.8M GEOGLOWS reaches, 15-day forecasts, an A to D evidence ladder grading global models, flood layers back to 1990
-- **AI on the map**: ask the map, explain this view, review your model results, run what-if scenarios
+- **The map computes** (v1.1): route a flood wave down GEOGLOWS's river network, flood a valley on your own GPU and draw a levee, replay a past flood, drop a well, draw a storm, a reservoir or a land-use change and watch the answer recompute, each model checked against a published reference
+- **AI on the map**: ask the map, explain this view, review your model results; MODFLOW and HEC-RAS 2D results read like a modeller's tools (3D layers, sections, water budget, flood exposure)
 - **Studio**: a seven-role agent crew plans, runs, and signs off a study, returning Word, Excel, notebook, and engineering exports (HEC-RAS/HMS, SWMM, MODFLOW 6)
 - **MCP server** for Claude or Cursor · **HydroGym** RL calibration environment
 - **3,200+ tests** · CAMELS-validated · **30+ outside contributors** · Zenodo-archived
@@ -60,7 +61,8 @@ Open-source agriculture assistant you run on your own machine: a multimodal tool
 - Cited **aquaponics and hydroponics design** (10 fish, 34 crops), farm and crop records, and experimental field-irrigation checks (drip, sprinkler, soil water)
 - **Photos and voice notes** on Telegram, WhatsApp, and the web; a cited table returns a ranked **differential**, never a verdict
 - **RAG measured, not asserted**: hit 0.879 · recall 0.833 · MAP 0.604 · 8/10 off-topic refused; nine techniques benchmarked, four ship. Faithfulness ~0.8, citation accuracy 1.00, judge agreement reported too
-- **1,770+ tests** · advice-safety golden set in CI · `agronaut eval` · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack
+- Season simulation with real climate data in an **offline 3D view**, with a top-down layout plan (air side sized from FAO 589) sent where the 3D page cannot go
+- **1,770+ tests** · advice-safety golden set in CI · `agronaut eval` · [DPG](https://github.com/Rekin226/Agronaut/tree/main/docs/dpg) compliance pack · sizing method is a granted Taiwan utility model patent (TW M661364)
 
 </td>
 </tr>
@@ -71,12 +73,14 @@ Open-source agriculture assistant you run on your own machine: a multimodal tool
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 [![PhysicsNeMo](https://img.shields.io/badge/NVIDIA-PhysicsNeMo-76B900?logo=nvidia&logoColor=white)](https://github.com/Rekin226/HydroPhysicsAI)
 
-A differentiable research twin of Taiwan's Choushui alluvial fan: pumping policy in, groundwater heads and land subsidence out, gated against held-out data at every stage.
+A differentiable research twin of Taiwan's Choushui alluvial fan: pumping policy in, groundwater heads and land subsidence out, gated against held-out data and scoped by a checked claims ledger.
 
 - **174 monitoring wells**, **116,769 metered pumps**, **798 leveling benchmarks**, 2012–2022, on a 1 km four-aquifer grid
 - Full chain hindcast of subsidence: **R² 0.639, RMSE 5.7 cm** across 36 ensemble members; compaction column **R² 0.652** out of fold
-- Policy projections to 2032 (36 members × 3 policies × 21 years in ~50 min on one GPU) and a decision app with orthophoto and terrain
-- **Failures published, not hidden**: on new 2023–2026 data the frozen forecast loses to seasonal climatology (RMSE 2.07 m vs 1.67 m), and every gate verdict is in the README
+- **Registered tests, not just fits**: masked-refit policy-response tests support the Yunlin head response to pumping cuts, and a prospective test (Nov 2026 to Oct 2027) is registered before its window opens
+- Decision page **scoped by a claims ledger** checked in CI: only the supported answer is shown; unsupported subsidence-size numbers are withdrawn to a labelled model-internals section
+- WRA monthly benchmark reports **transcribed with the Claude API** and verified, extending subsidence evidence to Jan 2026
+- **Failures published, not hidden**: on 2023–2026 data the frozen forecast loses to seasonal climatology (RMSE 2.05 m vs 1.67 m); every gate verdict, including failed rungs, is in the README
 
 [![Live demo](https://img.shields.io/badge/%F0%9F%A4%97_demo-live-FFD21E)](https://huggingface.co/spaces/Rekin226/HydroPhysicsAI-demo)
 
